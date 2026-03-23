@@ -5,6 +5,7 @@ import 'ag-grid-community/styles/ag-grid.css'
 import 'ag-grid-community/styles/ag-theme-alpine.css'
 import './App.css'
 
+// Dummy data for initial table rows
 const initialRows = [
   { id: 1, name: 'Aarav Sharma', email: 'aarav@example.com', department: 'Sales', city: 'Mumbai' },
   { id: 2, name: 'Diya Patel', email: 'diya@example.com', department: 'Engineering', city: 'Pune' },
@@ -101,7 +102,7 @@ function App() {
       resetForm()
     }
   }
-
+  
   const columnDefs = [
     { headerName: 'ID', field: 'id', maxWidth: 90, filter: 'agNumberColumnFilter' },
     { headerName: 'Name', field: 'name' },
